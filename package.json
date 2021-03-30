@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "npx tailwindcss-cli@latest build ./css/styles.css -o ./css/dist/styles.css",
+    "start": "python3 -m http.server 8080"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "tailwindcss": "^2.0.4"
+  }
+}
