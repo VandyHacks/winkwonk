@@ -56,3 +56,14 @@ body {
     margin-bottom: 10vh;
     display: inline-block;
 }
+.input{
+    margin-top: 40px;
+    width: 500px;
+    height: 100px;
+}
+.button{
+    margin-top: 20px;
+    background-color: #e4b81a;
+    width: 20vw;
+    height: 6vh;
+}
