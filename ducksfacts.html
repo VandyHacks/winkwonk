@@ -1,0 +1,41 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+    <link href="./css/dist/styles.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="banner text-white grid h-80">
+        <img class="place-self-center h-80 spinnyspinny" src="QUACKS.png" />
+        <div class="keepDuck place-self-center">Enter phone/email for Duck Facts!</div>
+    </div>
+    <div class="container place-self-center mx-auto">
+        <div class="grid place-self-center grid-cols-1 gap-7 ugly">
+            <div class="card place-self-center">
+                <input placeholder="Email" type="email" class="input place-self-center" id="email"></input>
+                <br>
+                <button class="button place-self-center" id="submitEmail">submit</button>
+            </div>
+            <div class="card place-self-center">
+                <input placeholder="Phone" type="tel" class="input place-self-center" id="phone"></input>
+                <br>
+                <button class="button place-self-center" id="submitPhone">submit</button>
+            </div>
+        </div>
+    </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+<script src="duck.js">
+</script>
+</body>
+</html>
