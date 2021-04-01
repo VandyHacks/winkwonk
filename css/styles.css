@@ -2,68 +2,98 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face{
-    font-family: montserrat;
-    src: url(Montserrat-Black.ttf);
+@font-face {
+  font-family: montserrat;
+  src: url(Montserrat-Black.ttf);
 }
 
 body {
-    background-color: #221C1B;
+  background-color: #221c1b;
 }
 
 .banner {
-    width: 100%;
-    height: 390px;
+  width: 100%;
+  height: 390px;
 }
 
 .card {
-    @apply rounded-md py-4 px-10;
-    height: 100%;
-    width: 70%;
-    padding: 3%;
-    margin-top: 30px;
+  @apply rounded-md py-4 px-10;
+  height: 100%;
+  width: 70%;
+  padding: 3%;
+  margin-top: 30px;
 }
 
-.content{
-    display: inline-block;
-    top: 4vh;
-    font-size: 3vmin;
-    font-family: montserrat;
+.spinnyspinny {
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
-.chev{
-    display: inline-block;
-    position: relative;
-    bottom: 8px;
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+  }
+  25% {
+    transform: rotate(90deg) scale(0.4);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.8);
+  }
+  75% {
+    transform: rotate(270deg) scale(0.4);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.8);
+  }
 }
-.fullbutton{
-    display: block;
-    width: 100%;
-    height: 100%;
+
+.content {
+  /* display: inline-block; */
+  /* top: 4vh; */
+  font-size: 3vmin;
+  font-family: montserrat;
+  margin-left: 2em;
 }
-.bigDuck{
-    width: 50%;
-    height: 50%;
-    margin:auto;
+.chev {
+  width: 10%;
+  /* display: inline-block; */
+  /* position: relative; */
+  /* bottom: 8px; */
 }
-.duckedText{
-    font-size: 70px;
-    font: montserrat;
+.fullbutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
-.keepDuck{
-    color: white;
-    font-family: montserrat;
-    font-size: 4vh;
-    margin-bottom: 10vh;
-    display: inline-block;
+.bigDuck {
+  width: 50%;
+  height: 50%;
+  margin: auto;
 }
-.input{
-    margin-top: 40px;
-    width: 500px;
-    height: 100px;
+.duckedText {
+  font-size: 70px;
+  font: montserrat;
 }
-.button{
-    margin-top: 20px;
-    background-color: #e4b81a;
-    width: 20vw;
-    height: 6vh;
+.keepDuck {
+  color: white;
+  font-family: montserrat;
+  font-size: 4vh;
+  margin-bottom: 10vh;
+  display: inline-block;
+}
+.input {
+  margin-top: 40px;
+  width: 500px;
+  height: 100px;
+}
+.button {
+  margin-top: 20px;
+  background-color: #e4b81a;
+  width: 20vw;
+  height: 6vh;
 }
