@@ -22,11 +22,13 @@
   $(document).ready(function(){
     $("#submitEmail").click(function(){
       var email = $("#email").val();
-      firebase.database().ref('emails/' + email).set(email);
+      firebase.database().ref('emails/').push(email);
+      alert("Submitted email!")
     });
     $("#submitPhone").click(function(){
         var phone = $("#phone").val();
-        firebase.database().ref('phones/' + phone).set(phone);
+        firebase.database().ref('phones/').push(phone);
+        alert("Submitted phone!")
       });
   });
   
